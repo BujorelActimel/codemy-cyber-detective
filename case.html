@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigație - Cyber Detective HQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <header>
+            <div class="header-title">
+                <span class="icon">🔒</span>
+                <h1>INVESTIGAȚIE CIBERNETICĂ</h1>
+            </div>
+            <button onclick="window.location.href='index.html'" class="back-btn">ÎNAPOI LA DASHBOARD</button>
+        </header>
+
+        <div class="case-container">
+            <div class="case-info">
+                <div class="case-header">
+                    <div>
+                        <span id="caseId" class="case-id"></span>
+                        <h2 id="caseTitle" class="case-title"></h2>
+                    </div>
+                    <span id="casePriority" class="case-priority"></span>
+                </div>
+                
+                <div class="case-brief">
+                    <h3>BRIEFING</h3>
+                    <pre id="caseBrief" class="brief-text"></pre>
+                </div>
+
+                <div class="case-objective">
+                    <h3>OBIECTIV</h3>
+                    <pre id="caseObjective" class="objective-text"></pre>
+                </div>
+
+                <div class="code-input">
+                    <h3>COD DE ACCES</h3>
+                    <input type="text" id="accessCode" placeholder="Introdu codul...">
+                    <button onclick="verifyCode()" class="verify-btn">VERIFICĂ</button>
+                </div>
+
+                <div id="output" class="output-console hidden">
+                    <h3>REZULTAT</h3>
+                    <pre id="outputText" class="output-text"></pre>
+                </div>
+            </div>
+
+            <div class="case-details">
+                <div class="technical-data">
+                    <h3>DATE TEHNICE</h3>
+                    <pre id="technicalData" class="technical-text"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="case.js"></script>
+</body>
+</html>
