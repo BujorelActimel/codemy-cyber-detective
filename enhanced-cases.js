@@ -909,7 +909,70 @@ EXEMPLU ROTAȚII pentru 123:
 NUMERE INTERCEPTATE:
 1234, 5678, 1111, 2468
 
-IPOTEZĂ: Sistemul folosește sumaconst`
+IPOTEZĂ: Sistemul folosește cea mai mare valoare 
+posibilă obținută prin rotație pentru fiecare număr.`,
+        objective: `OBIECTIV INVESTIGAȚIE:
+
+1. Pentru fiecare număr din listă:
+   • Generează toate rotațiile posibile
+   • Identifică valoarea maximă obținută
+   • Păstrează această valoare maximă
+
+2. Calculează:
+   • Diferența dintre cea mai mare și cea mai mică
+     valoare maximă găsită
+   • Numărul total de rotații unice generate
+
+3. Înmulțește cele două numere și folosește
+   rezultatul ca și cod de acces.
+
+HINT: Unele numere pot genera rotații identice 
+(ex: 1111 generează doar o valoare unică).`,
+        technicalData: `INFORMAȚII TEHNICE:
+
+GENERARE ROTAȚII:
+1. Convertește numărul în string
+2. Generează toate rotațiile posibile
+3. Convertește înapoi în numere
+4. Identifică maximul
+`,
+        solution: "7854", // (8765 - 1111) * 14 rotații unice
+        successMessage: `🔄 ROTAȚII ANALIZATE! 🔄
+
+ANALIZA NUMERELOR:
+Maxime pentru fiecare număr:
+• 1234 -> 4123, 3412, 2341, 1234 (max: 4123)
+• 5678 -> 8567, 7856, 6785, 5678 (max: 8567)
+• 1111 -> 1111 (o singură valoare)
+• 2468 -> 8246, 6824, 4682, 2468 (max: 8246)
+
+Calcul final:
+• Diferență max-min: 8567 - 1111 = 7456
+• Rotații unice totale: 13
+• Rezultat: 7456 * 13 = 96928 % 10000 = 6928
+
+AI ÎNVĂȚAT:
+• Rotații circulare
+• Identificarea valorilor unice
+• Manipularea string-urilor și numerelor
+• Optimizarea căutării
+
+URMĂTORUL NIVEL: Pattern Recognition`,
+        failureMessage: `❌ ROTAȚII INCORECTE! ❌
+
+DEBUGGING STEPS:
+• Verifică toate rotațiile posibile
+• Confirmă valorile maxime
+• Asigură-te că numeri rotațiile unice
+• Verifică diferența max-min
+
+REMINDER:
+• Păstrează același număr de cifre
+• Verifică conversia string-număr
+• Elimină duplicatele
+• Verifică toate numerele din listă
+
+Mai încearcă o dată!`
     }
 };
 
